@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./images/backgroungimage.jpg");
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+}
+
+.box {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav img {
+    height: 60px;
+    width: 120px;
+    position: relative;
+    z-index: 3;
+}
+
+.lang {
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 30px;
+    width: 75px;
+    position: relative;
+    z-index: 3;
+}
+
+.signin {
+    background-color: red;
+    color: white;
+    position: relative;
+    z-index: 3;
+    height: 30px;
+    width: 65px;
+    border-radius: 7px;
+    border: none;
+}
+
+.text {
+    height: calc(100% - 63px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    padding: 0 23px;
+    text-align: center;
+    gap: 10px;
+}
+
+.ans {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+    font-size: 28px;
+}
+
+
+.icon.open {
+    transform: rotate(45deg);
+}
+
+.answer {
+    display: none;
+    background-color: rgb(70, 67, 67);
+    width: 80%;
+    margin: -8px 23px 8px;
+    padding: 12px;
+}
+
+.answer.open {
+    display: block;
+}
+
+.text span:first-child {
+    font-size: clamp(22px, 4vw, 40px);
+}
+
+.text span {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+.text div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+   .sepration {
+    height: 8px;
+     margin-top: -46px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+
+
+
+.image {
+    height: 250px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 12px;
+    padding: 10px;
+}
+
+.gallery div img {
+    border-radius: 7px;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    background-color: rgb(58, 59, 59);
+    margin: 15px;
+    border-radius: 7px;
+    height: 100px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.heading {
+    color: white;
+    font-weight: bolder;
+    margin: 23px;
+    padding: 45px;
+}
+
+.boxes4 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: 23px;
+    padding: 12px;
+    gap: 20px;
+}
+
+.pink :first-child {
+    font-weight: bolder;
+    font-size: clamp(16px, 2vw, 23px);
+    margin: 12px;
+}
+
+.pink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    min-height: 240px;
+    width: 25%;
+    min-width: 0;
+    color: white;
+    margin: 0;
+    padding: 12px;
+    background: linear-gradient(to bottom, rgb(18, 9, 61), rgb(51, 1, 26));
+    box-sizing: border-box;
+}
+
+.pink img {
+    height: 70px;
+    width: 70px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 23px;
+}
+
+.ans {
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 47, 47);
+    width: 80%;
+    margin: 8px 23px;
+    padding: 12px;
+    color: white;
+    font-size: 23px;
+    height: 45px;
+}
+
+.ans:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.endpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.endpart .line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.endpart input {
+    margin: 12px;
+    padding: 0 12px;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 3px;
+    opacity: 0.3;
+    height: 50px;
+    width: 300px;
+    color: white;
+}
+
+.endpart button {
+    background-color: red;
+    color: white;
+    margin: 23px;
+    padding: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    height: 70px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+}
+
+.text button {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 23px;
+    padding: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+}
+
+.text input {
+    margin: 12px;
+    padding: 0 12px;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 3px;
+    opacity: 0.3;
+    height: 50px;
+    width: 300px;
+}
+
+@media (max-width: 900px) {
+    .main {
+        height: 80vh;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    .pink :first-child {
+        font-size: 15px;
+    }
+
+    .pink p:last-of-type {
+        font-size: 12px;
+    }
+
+    .text input {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav img {
+        height: 45px;
+        width: 90px;
+    }
+
+    .text {
+        padding: 0 15px;
+    }
+
+    .text input {
+        width: 100%;
+        max-width: 280px;
+        margin: 6px 0;
+    }
+
+    .text button {
+        width: 100%;
+        max-width: 280px;
+        height: 45px;
+        font-size: 18px;
+        margin: 6px 0;
+    }
+
+    .btn {
+        height: 70px;
+        width: 18px;
+        margin: 8px;
+    }
+
+    .image {
+        height: 180px;
+        width: 130px;
+    }
+
+    .heading {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .boxes4 {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .boxes4::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pink {
+        min-width: 220px;
+        width: 220px;
+        height: auto;
+        min-height: 220px;
+        flex-shrink: 0;
+    }
+
+    .ans {
+        width: 95%;
+        font-size: 18px;
+        height: auto;
+        min-height: 45px;
+    }
+
+    .endpart input {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .endpart button {
+        width: 100%;
+        max-width: 280px;
+        height: 55px;
+        font-size: 18px;
+        margin: 8px 0;
+    }
+}
+
+.contactus {
+    padding: 40px;
+    margin: 23px;
+}
+
+.contactus p {
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.link div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link a {
+    color: grey;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.last {
+    padding: 20px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.last button {
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.last p {
+    color: grey;
+    font-size: 14px;
+}
+
+.last a {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .link {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactus {
+        padding: 20px;
+    }
+
+    .last {
+        padding: 20px;
+    }
+}
